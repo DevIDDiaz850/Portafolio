@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Case Study | App de Terapia en React Native</title>
+    <meta name="description" content="Caso de estudio de una app móvil para atención psicológica desarrollada en React Native." />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/ProfilePicture.png"
+              alt="Logotipo desarrollador"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Luis David Díaz Hoil</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Inicio </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">Sobre mí</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Proyectos
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contacto </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="Menú"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="Cerrar menú"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Inicio </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> Sobre mí </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Proyectos </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contacto </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">App de Terapia — React Native</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Aplicación móvil iOS/Android desarrollada en React Native que conecta
+            pacientes con terapeutas profesionales. Agenda, videollamada cifrada,
+            chat seguro y seguimiento clínico, todo sin salir de la app.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="#" class="btn btn--bg" target="_blank">Ver demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/png/mokupp app.png"
+              alt="Mockup de la app React Native"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Resumen del Proyecto</h3>
+              <p class="project-details__desc-para">
+                La app crea un entorno integral para atención psicológica remota:
+                registro de pacientes y terapeutas verificados, emparejamiento por
+                especialidad, agenda con recordatorios, chat en tiempo real y
+                videollamadas cifradas para sesiones. Todo ocurre dentro de la app,
+                sin redirecciones a servicios externos.
+              </p>
+              <p class="project-details__desc-para">
+                La arquitectura móvil usa React Native (con o sin Expo), React
+                Navigation y almacenamiento seguro. El backend expone una API REST
+                en Node.js conectada a PostgreSQL para perfiles, historial de
+                sesiones, escalas estandarizadas y facturación. La comunicación
+                síncrona/asíncrona se maneja con WebSocket y un servicio de
+                videollamada con cifrado. Se incluyen notificaciones push, control
+                de acceso por roles (paciente/terapeuta/admin) y consentimiento de
+                datos. El objetivo es ofrecer una experiencia fluida, segura y
+                confiable, optimizada para uso clínico.
+              </p>
+            </div>
+
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tecnologías</h3>
+              <div class="skills">
+                <div class="skills__skill">React Native</div>
+                <div class="skills__skill">Expo</div>
+                <div class="skills__skill">React Navigation</div>
+                <div class="skills__skill">Node.js (API)</div>
+                <div class="skills__skill">Express / JS</div>
+                <div class="skills__skill">PostgreSQL</div>
+                <div class="skills__skill">Prisma</div>
+                <div class="skills__skill">WebSocket</div>
+                <div class="skills__skill">WebRTC</div>
+                <div class="skills__skill">JWT / OAuth</div>
+              </div>
+            </div>
+
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Enlaces</h3>
+              <a
+                href="https://github.com/DevIDDiaz850/AppTerapeutas"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Repositorio</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="GitHub"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="Twitter/X"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="YouTube"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="Instagram"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Luis David Díaz Hoil</h4>
+            <p class="main-footer__short-desc">
+              Desarrollador Full-Stack y móvil. Enfocado en apps de salud digital con seguridad y excelente UX.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; 2025. Hecho por
+          <a rel="noreferrer" target="_blank" href="https://github.com/DevIDDiaz850"
+            >David Diaz Hoil</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
