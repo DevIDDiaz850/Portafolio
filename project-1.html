@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>API Listen To Me — Node.js + PostgreSQL</title>
+  <meta name="description" content="API REST para la app Listen To Me: terapeutas, pacientes, sesiones y agenda. Stack: Node.js + PostgreSQL." />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/png/ProfilePicture.png" alt="Logo Listen To Me" class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub">API LISTEN TO ME</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper"><a href="./index.html" class="header__link">Inicio</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">Resumen</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Endpoints</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contacto</a></li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="Menú" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="Cerrar menú" class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link"><a href="./index.html">Inicio</a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#about">Resumen</a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#projects">Endpoints</a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">API Listen To Me — Node.js + PostgreSQL</h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
+          API REST para una app de terapeutas y pacientes. Provee autenticación, perfiles, gestión de sesiones,
+          agenda y notas clínicas. Construida con Node.js y PostgreSQL, con diseño escalable y documentación OpenAPI.
+        </p>
+      </div>
+      <div class="home-hero__cta">
+        <a href="#API" class="btn btn--bg">Ver endpoints</a>
+      </div>
+    </div>
+    <div class="home-hero__socials">
+      <div class="home-hero__social"><a href="#" class="home-hero__social-icon-link" aria-label="LinkedIn"><img src="./assets/png/linkedin-ico.png" alt="LinkedIn" class="home-hero__social-icon" /></a></div>
+      <div class="home-hero__social"><a href="#" class="home-hero__social-icon-link" aria-label="GitHub"><img src="./assets/png/github-ico.png" alt="GitHub" class="home-hero__social-icon" /></a></div>
+      <div class="home-hero__social"><a href="#" class="home-hero__social-icon-link" aria-label="Twitter"><img src="./assets/png/twitter-ico.png" alt="Twitter" class="home-hero__social-icon" /></a></div>
+      <div class="home-hero__social"><a href="#" class="home-hero__social-icon-link" aria-label="YouTube"><img src="./assets/png/yt-ico.png" alt="YouTube" class="home-hero__social-icon" /></a></div>
+      <div class="home-hero__social"><a href="#" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" aria-label="Instagram"><img src="./assets/png/insta-ico.png" alt="Instagram" class="home-hero__social-icon" /></a></div>
+    </div>
+    <div class="home-hero__mouse-scroll-cont"><div class="mouse"></div></div>
+  </section>
+
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">Resumen del proyecto</span>
+        <span class="heading-sec__sub">
+          API clínica para conectar terapeutas con pacientes. Incluye JWT, RBAC, validación de entrada, migraciones,
+          logs estructurados y CI/CD. Persistencia en PostgreSQL; caching y rate limiting opcional.
+        </span>
+      </h2>
+
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Stack y características</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              <strong>Stack:</strong> Node.js (Express/NestJS), PostgreSQL, ORM (Prisma/TypeORM), Jest, Docker, OpenAPI/Swagger.
+            </p>
+            <p class="about__content-details-para">
+              <strong>Dominios:</strong> autenticación y usuarios, perfiles de terapeuta/paciente, sesiones y notas,
+              agenda/availability, notificaciones y adjuntos básicos.
+            </p>
+            <p class="about__content-details-para">
+              <strong>Calidad:</strong> arquitectura modular, validación, manejo centralizado de errores y monitorización.
+            </p>
+          </div>
+          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contacto</a>
+        </div>
+
+        <div class="about__content-skills">
+          <h3 class="about__content-title">Tecnologías</h3>
+          <div class="skills">
+            <div class="skills__skill">Node.js</div>
+            <div class="skills__skill">PostgreSQL</div>
+            <div class="skills__skill">JWT / RBAC</div>
+            <div class="skills__skill">Express / JavaScript</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+<section id="api" class="projects sec-pad">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-bg">
+      <span id="API" class="heading-sec__main">API — Rutas</span>
+      <span class="heading-sec__sub">
+        Backend de la app de terapeutas (Node.js + PostgreSQL). Todas las respuestas son JSON.
+      </span>
+    </h2>
+
+    <div class="projects__content">
+      <!-- Base URL -->
+      <div class="projects__row">
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Base URL & Headers</h3>
+          <ul class="projects__row-content-desc">
+            <li><strong>Producción:</strong> https://api.tu-dominio.com</li>
+            <li><strong>Desarrollo:</strong> http://localhost:3000</li>
+            <li><strong>Headers:</strong> <code>Content-Type: application/json</code> y <code>Authorization: Bearer &lt;token&gt;</code> (cuando aplique)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Autenticación y cuentas -->
+      <div class="projects__row">
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Autenticación y Cuentas</h3>
+          <div class="projects__row-content-desc">
+            <p><code>POST /SingIn</code></p>
+<pre><code class="language-json">Body:
+{ "email": "user@dominio.com", "password": "****" }
+
+200 OK:
+{ "token": "jwt", "user": { "id": "uid", "role": "patient|therapist|admin" } }
+</code></pre>
+            <p><code>POST /CreateUsers</code></p>
+<pre><code class="language-json">Body:
+{ "name": "Texto", "email": "user@dominio.com", "password": "****", "role": "patient|therapist" }
+
+201 Created:
+{ "id": "uid", "name": "Texto", "email": "user@dominio.com", "role": "patient" }
+</code></pre>
+            <p><code>GET /GetByIdUser/:id</code></p>
+<pre><code class="language-json">200 OK:
+{ "id": "uid", "name": "Texto", "email": "user@dominio.com", "role": "patient" }
+</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terapeutas -->
+      <div class="projects__row">
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Terapeutas</h3>
+          <div class="projects__row-content-desc">
+            <p><code>GET /getTherapist</code></p>
+<pre><code class="language-json">200 OK:
+[
+  { "id": "t1", "name": "Nombre", "speciality": "Ansiedad", "rating": 4.8 },
+  ...
+]
+</code></pre>
+            <p><code>GET /getTherapist/:id</code></p>
+<pre><code class="language-json">200 OK:
+{
+  "id": "t1",
+  "name": "Nombre",
+  "bio": "Perfil breve",
+  "speciality": "Depresión",
+  "availability": ["2025-10-30T15:00:00Z", "..."]
+}
+</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preguntas y respuestas -->
+      <div class="projects__row">
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Preguntas y Respuestas</h3>
+          <div class="projects__row-content-desc">
+            <p><code>GET /getQuestions</code></p>
+<pre><code class="language-json">200 OK:
+[
+  { "id": "q1", "text": "¿Cómo te sientes hoy?", "type": "likert" },
+  ...
+]
+</code></pre>
+            <p><code>POST /postQuestions</code></p>
+<pre><code class="language-json">Body:
+{ "userId": "uid", "answers": [ { "questionId": "q1", "value": 4 } ] }
+
+201 Created:
+{ "saved": true, "count": 1 }
+</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aplicaciones / Solicitudes -->
+      <div class="projects__row">
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Aplicaciones / Solicitudes</h3>
+          <div class="projects__row-content-desc">
+            <p><code>POST /getApplications</code></p>
+<pre><code class="language-json">Body (opcional):
+{ "userId": "uid", "status": "pending|approved|rejected" }
+
+200 OK:
+[
+  { "id": "a1", "userId": "uid", "status": "pending", "createdAt": "2025-10-28T00:00:00Z" }
+]
+</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mensajería y conversaciones -->
+      <div class="projects__row">
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Mensajería y Conversaciones</h3>
+          <div class="projects__row-content-desc">
+            <p><code>POST /createConversation</code></p>
+<pre><code class="language-json">Body:
+{ "userId": "uid", "therapistId": "t1" }
+
+201 Created:
+{ "conversationId": "c1", "participants": ["uid", "t1"] }
+</code></pre>
+            <p><code>POST /getConversationsByUserId</code></p>
+<pre><code class="language-json">Body:
+{ "userId": "uid" }
+
+200 OK:
+[ { "id": "c1", "lastMessageAt": "2025-10-28T12:00:00Z" } ]
+</code></pre>
+            <p><code>POST /sendMessage</code></p>
+<pre><code class="language-json">Body:
+{ "conversationId": "c1", "senderId": "uid", "text": "Hola" }
+
+201 Created:
+{ "messageId": "m1", "createdAt": "2025-10-28T12:01:00Z" }
+</code></pre>
+            <p><code>GET /getMessagesByConversationId/:id</code></p>
+<pre><code class="language-json">200 OK:
+[
+  { "id": "m1", "senderId": "uid", "text": "Hola", "createdAt": "2025-10-28T12:01:00Z" }
+]
+</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Errores y convenciones -->
+      <div class="projects__row">
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Códigos de estado & Errores</h3>
+          <div class="projects__row-content-desc">
+            <ul>
+              <li><strong>HTTP:</strong> 200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Server Error.</li>
+              <li><strong>Errores (shape):</strong> <code>{ "error": "CODE", "message": "texto" }</code></li>
+              <li><strong>Fechas:</strong> ISO8601</li>
+              <li><strong>Paginación (si aplica):</strong> <code>?page=1&amp;pageSize=20</code></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        <span class="heading-sec__sub">Rutas principales y casos de uso resumidos.</span>
+      </h2>
+
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/png/Listen-to-me.png" alt="Agenda" class="projects__row-img" loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Agenda y disponibilidad</h3>
+            <p class="projects__row-content-desc">
+              <code>GET /availability</code>, <code>POST /appointments</code>, recordatorios básicos y cancelaciones.
+              Pensado para integrarse con apps móviles y web.
+            </p>
+            <a href="#" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Flujos de agenda</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contacto</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          ¿Buscas una API similar o integración con tu app? Escríbeme.
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="#" class="contact__form">
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Nombre</label>
+            <input required placeholder="Escribe tu nombre" type="text" class="contact__form-input" name="name" id="name" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Correo electrónico</label>
+            <input required placeholder="Escribe tu correo" type="text" class="contact__form-input" name="email" id="email" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Mensaje</label>
+            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Cuéntame tu caso"
+              name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm"><span>Redes</span></h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="#" aria-label="LinkedIn"><img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn" /></a>
+            <a target="_blank" rel="noreferrer" href="#" aria-label="GitHub"><img class="main-footer__icon" src="./assets/png/github-ico.png" alt="GitHub" /></a>
+            <a target="_blank" rel="noreferrer" href="#" aria-label="Twitter"><img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="Twitter" /></a>
+            <a target="_blank" rel="noreferrer" href="#" aria-label="YouTube"><img class="main-footer__icon" src="./assets/png/yt-ico.png" alt="YouTube" /></a>
+            <a target="_blank" rel="noreferrer" href="#" aria-label="Instagram"><img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="Instagram" /></a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">API Listen To Me</h4>
+          <p class="main-footer__short-desc">
+            Backend para terapeutas y pacientes. Node.js + PostgreSQL. Seguro, modular y documentado.
+          </p>
+        </div>
+      </div>
+
+      <div class="main-footer__lower">
+        © 2025. Hecho por Luis David Díaz Hoil
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>
